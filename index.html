@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Dharani fresh Indian spices and masalas with public offers, prices, and direct WhatsApp ordering.">
+    <title>Dharani Spices and Masalas</title>
+    <link rel="preconnect" href="https://images.unsplash.com">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Dharani home">
+        <span class="brand-mark">D</span>
+        <span>
+          <strong>Dharani</strong>
+          <small>Fresh powders, whole spices, offers</small>
+        </span>
+      </a>
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="#products">Products</a>
+        <a href="#offers">Offers</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Dharani spices and masalas</p>
+          <h1>Pure masalas for everyday Indian cooking.</h1>
+          <p class="hero-text">Show your latest prices, festive offers, and spice images in one public website that customers can open from any phone.</p>
+          <div class="hero-actions">
+            <a class="button primary" href="#products">View Products</a>
+            <a class="button secondary" id="whatsappHero" href="#contact">Order on WhatsApp</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section intro" aria-label="Store highlights">
+        <div>
+          <span class="metric">100%</span>
+          <span>Vegetarian spice blends</span>
+        </div>
+        <div>
+          <span class="metric">Fresh</span>
+          <span>Small-batch packing</span>
+        </div>
+        <div>
+          <span class="metric">Easy</span>
+          <span>Update prices in one JSON file</span>
+        </div>
+      </section>
+
+      <section class="section" id="products">
+        <div class="section-heading">
+          <p class="eyebrow">Catalogue</p>
+          <h2>Spices and masalas</h2>
+        </div>
+        <div class="toolbar" role="group" aria-label="Product filters">
+          <button class="filter active" type="button" data-filter="all">All</button>
+          <button class="filter" type="button" data-filter="Masala">Masala</button>
+          <button class="filter" type="button" data-filter="Powder">Powder</button>
+          <button class="filter" type="button" data-filter="Podi">Podi</button>
+        </div>
+        <div class="product-grid" id="productGrid" aria-live="polite"></div>
+      </section>
+
+      <section class="section offer-band" id="offers">
+        <div>
+          <p class="eyebrow">Current offer</p>
+          <h2 id="offerTitle">Loading offer...</h2>
+          <p id="offerText">Please wait while products are loaded.</p>
+        </div>
+        <a class="button primary" id="offerWhatsapp" href="#contact">Ask for offer</a>
+      </section>
+
+      <section class="section contact" id="contact">
+        <div>
+          <p class="eyebrow">Orders</p>
+          <h2>Public website, direct enquiry.</h2>
+          <p>Customers can call, message on WhatsApp, or visit your shop. Replace these details with your real business information before publishing.</p>
+        </div>
+        <div class="contact-panel">
+          <p><strong>Phone:</strong> <a id="phoneLink" href="tel:+919999999999">+91 99999 99999</a></p>
+          <p><strong>WhatsApp:</strong> <a id="whatsappLink" href="https://wa.me/919999999999">Send message</a></p>
+          <p><strong>Location:</strong> Chennai, Tamil Nadu, India</p>
+          <p><strong>Hours:</strong> 9:00 AM - 8:30 PM</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span>&copy; <span id="year"></span> Dharani</span>
+      <span>Prices and offers can change without notice.</span>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
