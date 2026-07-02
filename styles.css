@@ -96,7 +96,7 @@ a {
   color: white;
   overflow: hidden;
   background:
-    linear-gradient(90deg, rgba(33, 26, 22, 0.88), rgba(33, 26, 22, 0.5)),
+    linear-gradient(90deg, rgba(33, 26, 22, 0.66), rgba(33, 26, 22, 0.2)),
     url("https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=1800&q=80") center / cover;
   transition: background-image 420ms ease;
 }
@@ -107,8 +107,8 @@ a {
   inset: 0;
   z-index: -1;
   background:
-    radial-gradient(circle at 78% 48%, rgba(255, 250, 244, 0.18), transparent 24%),
-    linear-gradient(90deg, rgba(33, 26, 22, 0.9), rgba(33, 26, 22, 0.5) 52%, rgba(33, 26, 22, 0.72));
+    radial-gradient(circle at 78% 48%, rgba(255, 250, 244, 0.1), transparent 24%),
+    linear-gradient(90deg, rgba(33, 26, 22, 0.72), rgba(33, 26, 22, 0.18) 52%, rgba(33, 26, 22, 0.42));
 }
 
 .hero-copy {
@@ -130,7 +130,7 @@ a {
   aspect-ratio: 4 / 5;
   object-fit: contain;
   border-radius: 8px;
-  filter: drop-shadow(0 24px 28px rgba(0, 0, 0, 0.34));
+  filter: brightness(0.94) saturate(0.96) drop-shadow(0 24px 28px rgba(0, 0, 0, 0.34));
 }
 
 .hero-pack-main {
