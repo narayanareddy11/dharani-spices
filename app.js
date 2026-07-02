@@ -26,19 +26,16 @@ const heroSlides = [
     eyebrow: "Dharani spices and masalas",
     title: "Pure masalas for everyday Indian cooking.",
     text: "FSSAI licensed spice blends with authentic taste for home kitchens, retailers, and bulk orders.",
-    image: "images/dharani-chicken-masala-500g.jpeg",
   },
   {
     eyebrow: "Traditional grinding taste",
     title: "Fresh powders packed with real aroma.",
     text: "Chilli, turmeric, coriander, podi, and masala blends for reliable flavor in every recipe.",
-    image: "images/dharani-turmeric-powder-500g.jpeg",
   },
   {
     eyebrow: "Retail and wholesale orders",
     title: "Order Dharani products directly on WhatsApp.",
     text: "Call or message for product availability, current prices, offers, and bulk supply enquiries.",
-    image: "images/dharani-coriander-powder-500g.jpeg",
   },
 ];
 
@@ -94,7 +91,6 @@ function bindContactLinks() {
 
 function renderHeroSlide(index) {
   const slide = heroSlides[index];
-  hero.style.setProperty("--hero-image", `url("${slide.image}")`);
   heroEyebrow.textContent = slide.eyebrow;
   heroTitle.textContent = slide.title;
   heroText.textContent = slide.text;
