@@ -1,6 +1,6 @@
-# Dharani Spices and Masalas Website
+# Dharani Agro Foods Website
 
-This is a free static website for Dharani spices and masalas. It can be deployed publicly with GitHub Pages.
+This is a free static website for Dharani Agro Foods spices and masalas. It can be deployed publicly with GitHub Pages.
 
 ## Best Free Deployment
 

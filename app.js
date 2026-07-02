@@ -1,7 +1,7 @@
 const store = {
   phoneDisplay: "+91 85002 17558",
   whatsappNumber: "918500217558",
-  defaultMessage: "Hi, I want to order Dharani spices and masalas.",
+  defaultMessage: "Hi, I want to order Dharani Agro Foods spices and masalas.",
 };
 
 const grid = document.querySelector("#productGrid");
