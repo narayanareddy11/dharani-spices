@@ -186,6 +186,26 @@ a {
   margin-top: 30px;
 }
 
+.hero-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 18px;
+}
+
+.hero-badges span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 34px;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  border-radius: 999px;
+  padding: 7px 11px;
+  background: rgba(255, 255, 255, 0.12);
+  color: rgba(255, 255, 255, 0.92);
+  font-size: 0.85rem;
+  font-weight: 800;
+}
+
 .hero-dots {
   display: flex;
   gap: 10px;
@@ -238,30 +258,6 @@ a {
 
 .section {
   padding: clamp(42px, 7vw, 82px) clamp(18px, 4vw, 52px);
-}
-
-.intro {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 1px;
-  padding-top: 0;
-  padding-bottom: 0;
-  background: var(--line);
-}
-
-.intro div {
-  min-height: 128px;
-  display: grid;
-  align-content: center;
-  gap: 6px;
-  padding: 28px;
-  background: var(--surface);
-}
-
-.metric {
-  color: var(--leaf);
-  font-size: 1.75rem;
-  font-weight: 900;
 }
 
 .section-heading {
@@ -443,7 +439,6 @@ a {
     justify-content: space-between;
   }
 
-  .intro,
   .product-grid {
     grid-template-columns: 1fr;
   }
@@ -465,5 +460,10 @@ a {
 
   .hero-pack-main {
     width: 170px;
+  }
+
+  .hero-badges span {
+    min-height: 32px;
+    font-size: 0.78rem;
   }
 }
