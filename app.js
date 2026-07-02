@@ -1,6 +1,6 @@
 const store = {
-  phoneDisplay: "+91 99999 99999",
-  whatsappNumber: "919999999999",
+  phoneDisplay: "+91 85002 17558",
+  whatsappNumber: "918500217558",
   defaultMessage: "Hi, I want to order Dharani spices and masalas.",
 };
 

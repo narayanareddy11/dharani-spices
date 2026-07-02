@@ -154,6 +154,12 @@ a {
   border: 1px solid rgba(255, 255, 255, 0.35);
 }
 
+.button.light {
+  background: rgba(255, 255, 255, 0.16);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.32);
+}
+
 .section {
   padding: clamp(42px, 7vw, 82px) clamp(18px, 4vw, 52px);
 }
@@ -292,6 +298,13 @@ a {
   max-width: 720px;
   margin-bottom: 0;
   color: rgba(255, 255, 255, 0.86);
+}
+
+.offer-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 12px;
 }
 
 .contact {
