@@ -78,8 +78,8 @@ bindContactLinks();
 
 fetch("data/products.json")
   .then((response) => response.json())
-  .then((items) => {
-    products = items;
+  .then((data) => {
+    products = Array.isArray(data) ? data : data.products;
     renderProducts();
     renderOffer();
   })

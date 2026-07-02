@@ -1,65 +1,67 @@
-[
-  {
-    "name": "Dharani Chicken Masala",
-    "category": "Masala",
-    "weight": "500 g",
-    "price": 240,
-    "offer": "Suggested price",
-    "description": "Ready masala blend for chicken curry, fry, gravy, and home cooking.",
-    "image": "images/dharani-chicken-masala-500g.jpeg"
-  },
-  {
-    "name": "Dharani Idli Karam Podi",
-    "category": "Podi",
-    "weight": "500 g",
-    "price": 220,
-    "offer": "Suggested price",
-    "description": "Spicy idli karam podi for idli, dosa, upma, and rice.",
-    "image": "images/dharani-idli-karam-podi-500g.jpeg"
-  },
-  {
-    "name": "Dharani Chilli Powder",
-    "category": "Powder",
-    "weight": "500 g",
-    "price": 210,
-    "offer": "Suggested price",
-    "description": "Red chilli powder for curries, pickles, fries, and daily cooking.",
-    "image": "images/dharani-chilli-powder-500g.jpeg"
-  },
-  {
-    "name": "Dharani Turmeric Powder",
-    "category": "Powder",
-    "weight": "500 g",
-    "price": 145,
-    "offer": "Suggested price",
-    "description": "Haldi powder for curries, vegetables, pickles, and traditional recipes.",
-    "image": "images/dharani-turmeric-powder-500g.jpeg"
-  },
-  {
-    "name": "Dharani Coriander Powder",
-    "category": "Powder",
-    "weight": "500 g",
-    "price": 135,
-    "offer": "Suggested price",
-    "description": "Dhania powder with earthy aroma for gravies, curries, and masala mixes.",
-    "image": "images/dharani-coriander-powder-500g.jpeg"
-  },
-  {
-    "name": "Dharani Chilli Powder Yellow Pack",
-    "category": "Powder",
-    "weight": "500 g",
-    "price": 210,
-    "offer": "Confirm variant",
-    "description": "Alternate chilli powder pack image. Keep this only if it is a different product or quality.",
-    "image": "images/dharani-chilli-powder-yellow-pack-500g.jpeg"
-  },
-  {
-    "name": "Dharani Chat Masala",
-    "category": "Masala",
-    "weight": "500 g",
-    "price": 190,
-    "offer": "Suggested price",
-    "description": "Tangy chat masala for fruit chat, snacks, salads, and street-style dishes.",
-    "image": "images/dharani-chat-masala-500g.jpeg"
-  }
-]
+{
+  "products": [
+    {
+      "name": "Dharani Chicken Masala",
+      "category": "Masala",
+      "weight": "500 g",
+      "price": 240,
+      "offer": "Suggested price",
+      "description": "Ready masala blend for chicken curry, fry, gravy, and home cooking.",
+      "image": "images/dharani-chicken-masala-500g.jpeg"
+    },
+    {
+      "name": "Dharani Idli Karam Podi",
+      "category": "Podi",
+      "weight": "500 g",
+      "price": 220,
+      "offer": "Suggested price",
+      "description": "Spicy idli karam podi for idli, dosa, upma, and rice.",
+      "image": "images/dharani-idli-karam-podi-500g.jpeg"
+    },
+    {
+      "name": "Dharani Chilli Powder",
+      "category": "Powder",
+      "weight": "500 g",
+      "price": 210,
+      "offer": "Suggested price",
+      "description": "Red chilli powder for curries, pickles, fries, and daily cooking.",
+      "image": "images/dharani-chilli-powder-500g.jpeg"
+    },
+    {
+      "name": "Dharani Turmeric Powder",
+      "category": "Powder",
+      "weight": "500 g",
+      "price": 145,
+      "offer": "Suggested price",
+      "description": "Haldi powder for curries, vegetables, pickles, and traditional recipes.",
+      "image": "images/dharani-turmeric-powder-500g.jpeg"
+    },
+    {
+      "name": "Dharani Coriander Powder",
+      "category": "Powder",
+      "weight": "500 g",
+      "price": 135,
+      "offer": "Suggested price",
+      "description": "Dhania powder with earthy aroma for gravies, curries, and masala mixes.",
+      "image": "images/dharani-coriander-powder-500g.jpeg"
+    },
+    {
+      "name": "Dharani Chilli Powder Yellow Pack",
+      "category": "Powder",
+      "weight": "500 g",
+      "price": 210,
+      "offer": "Confirm variant",
+      "description": "Alternate chilli powder pack image. Keep this only if it is a different product or quality.",
+      "image": "images/dharani-chilli-powder-yellow-pack-500g.jpeg"
+    },
+    {
+      "name": "Dharani Chat Masala",
+      "category": "Masala",
+      "weight": "500 g",
+      "price": 190,
+      "offer": "Suggested price",
+      "description": "Tangy chat masala for fruit chat, snacks, salads, and street-style dishes.",
+      "image": "images/dharani-chat-masala-500g.jpeg"
+    }
+  ]
+}

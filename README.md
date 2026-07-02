@@ -64,3 +64,26 @@ const store = {
 7. Save.
 
 After a short wait, GitHub will show your public website URL.
+
+## Admin Page
+
+An admin CMS page is included at:
+
+```text
+/admin/
+```
+
+It uses Decap CMS so an admin can add products, delete products, edit prices/offers, and upload product images.
+
+Important: GitHub Pages can show the admin page, but it cannot securely handle CMS login by itself. For the admin page to save changes back to GitHub, connect this repository to Netlify and enable:
+
+- Netlify Identity
+- Git Gateway
+
+After that, open the Netlify site admin URL:
+
+```text
+https://your-netlify-site.netlify.app/admin/
+```
+
+The public GitHub Pages website can stay online, but the easiest full admin workflow is to serve the site through Netlify.

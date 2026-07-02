@@ -7,6 +7,7 @@
     <title>Dharani Spices and Masalas</title>
     <link rel="preconnect" href="https://images.unsplash.com">
     <link rel="stylesheet" href="styles.css">
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   </head>
   <body>
     <header class="site-header">
@@ -96,5 +97,14 @@
     </footer>
 
     <script src="app.js"></script>
+    <script>
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", (user) => {
+          if (!user && window.location.hash.includes("_token=")) {
+            window.netlifyIdentity.open();
+          }
+        });
+      }
+    </script>
   </body>
 </html>
