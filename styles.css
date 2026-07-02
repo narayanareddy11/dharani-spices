@@ -85,14 +85,29 @@ a {
 }
 
 .hero {
+  position: relative;
+  isolation: isolate;
   min-height: 74vh;
   display: grid;
   align-items: end;
   padding: clamp(60px, 9vw, 112px) clamp(18px, 4vw, 52px) 42px;
   color: white;
+  overflow: hidden;
   background:
     linear-gradient(90deg, rgba(33, 26, 22, 0.82), rgba(33, 26, 22, 0.35)),
-    url("https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=1800&q=80") center / cover;
+    var(--hero-image, url("images/dharani-chicken-masala-500g.jpeg")) center / contain no-repeat,
+    #2a2018;
+  transition: background-image 420ms ease;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background:
+    radial-gradient(circle at 78% 48%, rgba(255, 250, 244, 0.22), transparent 24%),
+    linear-gradient(90deg, rgba(33, 26, 22, 0.9), rgba(33, 26, 22, 0.56) 52%, rgba(33, 26, 22, 0.72));
 }
 
 .hero-copy {
@@ -128,6 +143,26 @@ a {
   flex-wrap: wrap;
   gap: 12px;
   margin-top: 30px;
+}
+
+.hero-dots {
+  display: flex;
+  gap: 10px;
+  margin-top: 28px;
+}
+
+.hero-dot {
+  width: 34px;
+  height: 6px;
+  border: 0;
+  border-radius: 999px;
+  padding: 0;
+  background: rgba(255, 255, 255, 0.42);
+  cursor: pointer;
+}
+
+.hero-dot.active {
+  background: var(--saffron);
 }
 
 .button,

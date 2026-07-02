@@ -12,8 +12,35 @@ const offerWhatsapp = document.querySelector("#offerWhatsapp");
 const whatsappHero = document.querySelector("#whatsappHero");
 const whatsappLink = document.querySelector("#whatsappLink");
 const phoneLink = document.querySelector("#phoneLink");
+const hero = document.querySelector("#hero");
+const heroEyebrow = document.querySelector("#heroEyebrow");
+const heroTitle = document.querySelector("#heroTitle");
+const heroText = document.querySelector("#heroText");
+const heroDots = document.querySelectorAll(".hero-dot");
 
 let products = [];
+let heroSlideIndex = 0;
+
+const heroSlides = [
+  {
+    eyebrow: "Dharani spices and masalas",
+    title: "Pure masalas for everyday Indian cooking.",
+    text: "FSSAI licensed spice blends with authentic taste for home kitchens, retailers, and bulk orders.",
+    image: "images/dharani-chicken-masala-500g.jpeg",
+  },
+  {
+    eyebrow: "Traditional grinding taste",
+    title: "Fresh powders packed with real aroma.",
+    text: "Chilli, turmeric, coriander, podi, and masala blends for reliable flavor in every recipe.",
+    image: "images/dharani-turmeric-powder-500g.jpeg",
+  },
+  {
+    eyebrow: "Retail and wholesale orders",
+    title: "Order Dharani products directly on WhatsApp.",
+    text: "Call or message for product availability, current prices, offers, and bulk supply enquiries.",
+    image: "images/dharani-coriander-powder-500g.jpeg",
+  },
+];
 
 function rupees(value) {
   return new Intl.NumberFormat("en-IN", {
@@ -65,6 +92,34 @@ function bindContactLinks() {
   whatsappHero.href = whatsappUrl();
 }
 
+function renderHeroSlide(index) {
+  const slide = heroSlides[index];
+  hero.style.setProperty("--hero-image", `url("${slide.image}")`);
+  heroEyebrow.textContent = slide.eyebrow;
+  heroTitle.textContent = slide.title;
+  heroText.textContent = slide.text;
+
+  heroDots.forEach((dot, dotIndex) => {
+    dot.classList.toggle("active", dotIndex === index);
+  });
+}
+
+function startHeroRotation() {
+  renderHeroSlide(heroSlideIndex);
+
+  setInterval(() => {
+    heroSlideIndex = (heroSlideIndex + 1) % heroSlides.length;
+    renderHeroSlide(heroSlideIndex);
+  }, 4500);
+}
+
+heroDots.forEach((dot) => {
+  dot.addEventListener("click", () => {
+    heroSlideIndex = Number(dot.dataset.slide);
+    renderHeroSlide(heroSlideIndex);
+  });
+});
+
 filters.forEach((button) => {
   button.addEventListener("click", () => {
     filters.forEach((item) => item.classList.remove("active"));
@@ -75,6 +130,7 @@ filters.forEach((button) => {
 
 document.querySelector("#year").textContent = new Date().getFullYear();
 bindContactLinks();
+startHeroRotation();
 
 fetch("data/products.json")
   .then((response) => response.json())
